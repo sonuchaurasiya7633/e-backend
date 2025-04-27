@@ -1,16 +1,11 @@
 {
   "version": 2,
   "builds": [
-   {
-    "src": "index.js",
-    "use": "@vercel/node",
-    "config": { "includeFiles": ["dist/**"] }
-   }
+    { "src": "api/server.js", "use": "@vercel/node" }
   ],
   "routes": [
-   {
-    "src": "/(.*)",
-    "dest": "index.js"
-   }
+    { "src": "/order", "methods": ["POST"], "dest": "/api/server.js" },
+    { "src": "/payment", "methods": ["GET"], "dest": "/api/server.js" },
+    { "src": "/customers", "methods": ["GET"], "dest": "/api/server.js" }
   ]
- }
+}
