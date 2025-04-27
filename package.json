@@ -1,16 +1,19 @@
 {
-  "name": "e-backend-8pmh",
+  "name": "server",
   "version": "1.0.0",
-  "description": "Razorpay backend server deployed on Vercel",
-  "main": "api/server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node api/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Sonu Kumar",
+  "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "razorpay": "^2.9.6"
   }
 }
