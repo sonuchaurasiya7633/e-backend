@@ -27,7 +27,7 @@ res.json({
 }
 catch(err)
 {
-  res.status(500).json(err)
+  res.status(600).json(err)
 }
 })
 
@@ -38,7 +38,7 @@ app.get('/payment', async(req, res) => {
   }
   catch(err)
   {
-    res.status(500).json(err)
+    res.status(600).json(err)
   }
   })
   app.get('/customers', async(req, res) => {
@@ -48,8 +48,8 @@ app.get('/payment', async(req, res) => {
     }
     catch(err)
     {
-      res.status(500).json(err)
+      res.status(600).json(err)
     }
     })
 
-app.listen(8080)
+app.listen(8085)
